@@ -48,9 +48,9 @@ Wrapped `fetch()` calls in `news.js` with per-feed `try-catch` for resilience
 Completed and cleaned `style.css`
 | 8   |                                          |   Nityanand            |   Nityanand           |
  Removed unnecessary files 'home.js'
-| 9   |                                          |               |              |
-| 10  |                                          |               |              |
-| 11  |                                          |               |              |
+| 9   |Fixed random question selection (was hardcoded to questions[1])                       |               |              |
+| 10  |                                          |     Nandan          |              |
+| 11  |                                          |               |    Nandan          |
 | 12  |                                          |               |              |
 | 13  |                                          |               |              |
 | 14  |                                          |               |              |
