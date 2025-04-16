@@ -48,11 +48,11 @@ Wrapped `fetch()` calls in `news.js` with per-feed `try-catch` for resilience
 Completed and cleaned `style.css`
 | 8   |                                          |   Nityanand            |   Nityanand           |
  Removed unnecessary files 'home.js'
-| 9   |Fixed random question selection (was hardcoded to questions[1])                       |               |              |
-| 10  |                                          |     Nandan          |              |
-| 11  |                                          |               |    Nandan          |
-| 12  |                                          |               |              |
-| 13  |                                          |               |              |
+| 9   |                 changed charset in index.html                         |       Ananya        |       Ananya       |
+| 10  |                  added nav bar in analytics.html                        |        Ananya       |       Ananya       |
+| 11  |                    changed source of script in profile.html                      |       Ananya        |       Ananya       |
+| 12  |                      added quiz.html in the navigation bar for all pages                    |       Ananya        |        Ananya      |
+| 13  |                     added container in items.html                     |       Ananya        |      Ananya        |
 | 14  |                                          |               |              |
 | 15  |                                          |               |              |
 | 16  |                                          |               |              |
