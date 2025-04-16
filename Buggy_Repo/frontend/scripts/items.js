@@ -24,7 +24,7 @@ async function loadItems(searchTerm = "") {
 }
 
 async function deleteItem(id) {
-  await fetch(`${baseURL}/items/${id}`, { method: "POST" });
+  await fetch(`${baseURL}/items/${id}`, { method: "DELETE" });//deleteItem() uses POST instead of DELETE in items.js(Nityanand)
   loadItems(document.getElementById("search").value); 
 }
 
@@ -38,10 +38,11 @@ document.getElementById("itemForm").addEventListener("submit", async (e) => {
   const description = document.getElementById("description").value;
   await fetch(`${baseURL}/items`, {
     method: "POST",
-    headers: { "Content-Type": "application/html" },
+    headers: { "Content-Type": "application/json" },//itemForm uses incorrect content-type application/html(NItyanand)
     body: JSON.stringify({ name, description })
   });
   e.target.reset();
+  
   loadItems(document.getElementById("search").value);
 });
 
