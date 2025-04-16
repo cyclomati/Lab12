@@ -1,16 +1,60 @@
 .container {
-    padding: 100px;
+    max-width: 900px;
+    margin: auto;
+    padding: 100px 20px;
+    font-family: Arial, sans-serif;
 }
 
 nav {
     background-color: blue;
-    justify-items: center;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
+    margin: 0;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    padding: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+#stats, #userList, #itemList, #attemptList, #newsList {
+    margin-top: 20px;
+}
+
+.news-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.news-scrollable,
+.attempt-scrollable {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+form input, form button, select {
+    margin: 10px 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
