@@ -20,20 +20,25 @@ async function loadNews(searchTerm = "", source = "all", reset = false) {
     const selectedFeeds = source === "all" ? feeds : feeds.filter(f => f.name === source);
     
     for (const feed of selectedFeeds) {
-      const res = await fetch(`${rssConverter}${encodeURIComponent(feed.url)}`);
-      if (!res.ok) throw new Error(`Failed to fetch ${feed.name}`);
-      const data = await res.json();
-      
-      const articles = (data.items || []).map(item => ({
-        title: item.title || "No title",
-        description: item.description || "No description",
-        url: item.link || "#",
-        source: feed.name.toUpperCase(),
-        pubDate: item.pubDate ? new Date(item.pubDate).toLocaleDateString() : "Unknown"
-      }));
-      
-      allArticles.push(...articles);
+      try {
+        const res = await fetch(`${rssConverter}${encodeURIComponent(feed.url)}`);
+        if (!res.ok) throw new Error(`Failed to fetch ${feed.name}`);
+        const data = await res.json();
+    
+        const articles = (data.items || []).map(item => ({
+          title: item.title || "No title",
+          description: item.description || "No description",
+          url: item.link || "#",
+          source: feed.name.toUpperCase(),
+          pubDate: item.pubDate ? new Date(item.pubDate).toLocaleDateString() : "Unknown"
+        }));
+    
+        allArticles.push(...articles);
+      } catch (err) {
+        console.warn(`Skipping ${feed.name}: ${err.message}`);
+      }
     }
+    
     
     const filteredArticles = searchTerm
       ? allArticles.filter(article =>
