@@ -1,11 +1,9 @@
 from pydantic import BaseModel
 
-class Item():
+class Item(BaseModel):  # ✅ Inherit from BaseModel
     name: int
     description: str
 
 class User(BaseModel):
     username: str
     bio: str
-    
-    # You can raise your hands and give the answer to the chocolate question
