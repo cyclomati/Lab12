@@ -28,7 +28,7 @@
 
 - Name : Roll Number
 - Anmol Sharma = 2024101148
-Nityanand Gupta = 2024101147
+- Nityanand Gupta = 2024101147
 - Ananya : 2024114007
 
 ### Table to keep track
