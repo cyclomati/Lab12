@@ -33,13 +33,20 @@
 | ID  | Issue Description                        | Identified By | Fixed By     |
 |-----|------------------------------------------|---------------|--------------|
 | 1   | Style.css is not filled                                    |         Narain |     Whole Team     |
-| 2   |                                          |               |              |
-| 3   |                                          |               |              |
-| 4   |                                          |               |              |
-| 5   |                                          |               |              |
-| 6   |                                          |               |              |
-| 7   |                                          |               |              |
-| 8   |                                          |               |              |
+| 2   |                                          | Nityanand  |       Nityanand       |
+Fixed `deleteItem()` method from POST to DELETE in `items.js`   
+| 3   |                                          |   Nityanand            |   Nityanand           |
+Corrected `Content-Type` header to `application/json` in item form submission
+| 4   |                                          |   Nityanand            |   Nityanand           |
+ Fixed API base URL usage in `profile.js`
+| 5   |                                          |   Nityanand            |      Nityanand        |
+Corrected ID mismatch from `userCounts` to `userCount` in `profile.html`
+| 6   |                                          |   Nityanand            |  Nityanand            |
+Wrapped `fetch()` calls in `news.js` with per-feed `try-catch` for resilience
+| 7   |                                          |   Nityanand            | Nityanand             |
+Completed and cleaned `style.css`
+| 8   |                                          |   Nityanand            |   Nityanand           |
+ Removed unnecessary files 'home.js'
 | 9   |                                          |               |              |
 | 10  |                                          |               |              |
 | 11  |                                          |               |              |
