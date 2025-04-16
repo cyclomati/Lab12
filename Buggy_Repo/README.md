@@ -55,10 +55,10 @@ Completed and cleaned `style.css`
 | 11  |                    changed source of script in profile.html                      |       Ananya        |       Ananya       |
 | 12  |                      added quiz.html in the navigation bar for all pages                    |       Ananya        |        Ananya      |
 | 13  |                     added container in items.html                     |       Ananya        |      Ananya        |
-| 14  |   changed in main.py                                     | Anmol              |              |Anmol
-| 15  |    changed in quiz.py                                    | Anmol             |              |Anmol
-| 16  |  changed in analytics.py                                 | Anmol              |              |Anmol
-| 17  |  changed in models.py                                    | Anmol              |              |Anmol
+| 14  |   changed in main.py                                     | Anmol              | Anmol             |Anmol
+| 15  |    changed in quiz.py                                    | Anmol             |  Anmol            |Anmol
+| 16  |  changed in analytics.py                                 | Anmol              |       Anmol       |Anmol
+| 17  |  changed in models.py                                    | Anmol              |            Anmol  |Anmol
 | 18  |                                          |               |              |
 | 19  |                                          |               |              |
 | 20  |                                          |               |              |
